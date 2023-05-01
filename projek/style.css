@@ -326,7 +326,7 @@ svg {
 }
 
 .background {
-  background-image: url(background/content.png);
+  background-image: url(../background/content.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -505,7 +505,7 @@ svg {
 .ig {
   width: 50px;
   height: 50px;
-  background-image: url(image/instagram.png);
+  background-image: url(../gambar/instagram.png);
   display: inline-block;
   position: absolute;
   top: 61px;
@@ -516,7 +516,7 @@ svg {
 .wa {
   width: 50px;
   height: 50px;
-  background-image: url(image/whatsapp250px.png);
+  background-image: url(../gambar/whatsapp250px.png);
   display: inline-block;
   position: absolute;
   top: 65px;
