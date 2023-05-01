@@ -1,0 +1,554 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Background */
+* {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: -9999;
+  display: block;
+  background-color: #0e4166;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(14, 65, 102, 0.86),
+    #0e4166
+  );
+}
+
+@keyframes image {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Style */
+.header {
+  height: 663px;
+}
+
+.header h1 {
+  text-align: center;
+  line-height: 605px;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0%,
+  16%,
+  25%,
+  76% {
+    content: "";
+  }
+
+  2%,
+  15%,
+  20%,
+  24%,
+  36%,
+  48%,
+  74% {
+    content: "R";
+  }
+  4%,
+  14%,
+  22%,
+  34%,
+  50%,
+  72% {
+    content: "Ri";
+  }
+  6%,
+  13%,
+  24%,
+  32%,
+  52%,
+  70% {
+    content: "Riz";
+  }
+  8%,
+  12%,
+  26%,
+  30%,
+  54%,
+  68% {
+    content: "Rizk";
+  }
+  9%,
+  28%,
+  56%,
+  34% {
+    content: "Rizki";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 2ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+/* ABOUT */
+.about {
+  height: 650px;
+}
+
+.profil {
+  width: 800px;
+  margin: 70px auto;
+  background-color: rgb(243, 239, 239);
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid rgb(243, 239, 239);
+  box-shadow: -0px -0px 16px black;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.about h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #ffff;
+  letter-spacing: 3px;
+  padding-top: 100px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.about p {
+  padding: 50px 0 20px 30px;
+  margin-right: 25px;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 25px;
+}
+
+/* Content */
+.content {
+  width: 800px;
+  height: 760px;
+  margin: auto;
+}
+
+.background {
+  background-image: url(background/content.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.content .box .gambar img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.content h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: #ffff;
+  margin: 0 0 80px 0;
+  padding-top: 100px;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 3px black;
+}
+
+.content .box .gambar {
+  height: 260px;
+  width: 200px;
+  background-color: #fbfdffa9;
+  border: 5px solid rgb(195, 216, 228);
+  box-shadow: 2px 2px 15px rgb(2, 21, 102);
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.content .gambar .deskripsi {
+  text-align: center;
+}
+
+.box .gambar .deskripsi p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #251d1d;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+/* Button */
+.content .gambar .deskripsi button {
+  width: 100px;
+  height: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #25aae1 25%,
+    #40d9e4 50%,
+    #30c9dd 75%,
+    #1eb9b9
+  );
+  box-shadow: 0px 4px 15px 0 rgba(49, 196, 190, 0.75);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+}
+
+.content .gambar .deskripsi button a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.content .gambar .deskripsi button:hover {
+  background-color: blue;
+  width: 80px;
+  height: 27px;
+  font-size: 13px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  letter-spacing: 2px;
+}
+
+/* sertifikat */
+.sertifikat {
+  width: 800px;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.sertifikat .gambar img {
+  width: 363px;
+  height: 180px;
+}
+
+.sertifikat .gambar p {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  color: #251d1d;
+  margin: 5px 0 5px 0;
+}
+
+.sertifikat .gambar {
+  background-color: #fbfdffa9;
+  box-shadow: 2px 2px 15px rgb(2, 21, 102);
+  border: 5px solid rgb(195, 216, 228);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Footer */
+.footer {
+  height: 250px;
+  width: 400px;
+  display: flex;
+  margin: 50px auto 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+.kontak,
+.teknologi {
+  position: relative;
+}
+
+.kiri,
+.kanan {
+  width: 150px;
+  margin-top: 50px;
+  height: 100px;
+}
+
+.kontak h2 {
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  top: 17px;
+  left: 6px;
+}
+
+.teknologi h2 {
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  top: 17px;
+}
+
+.ig {
+  width: 50px;
+  height: 50px;
+  background-image: url(image/instagram.png);
+  display: inline-block;
+  position: absolute;
+  top: 61px;
+  left: 14px;
+  background-repeat: no-repeat;
+}
+
+.wa {
+  width: 50px;
+  height: 50px;
+  background-image: url(image/whatsapp250px.png);
+  display: inline-block;
+  position: absolute;
+  top: 65px;
+  left: 90px;
+  background-repeat: no-repeat;
+}
+
+.footer .teknologi .kanan {
+  margin-top: 26px;
+}
+
+.footer .teknologi .kanan,
+.teknologi h2 {
+  margin-left: 50px;
+}
+
+.teknologi .kanan .html {
+  position: absolute;
+  top: 60px;
+  left: 65px;
+}
+
+.teknologi .kanan .css {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  left: 135px;
+  top: 65px;
+}
+
+.footer .copy p {
+  width: 300px;
+  margin: 60px 20px 0 -90px;
+  font-weight: 500;
+}
