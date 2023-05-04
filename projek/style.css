@@ -321,7 +321,7 @@ svg {
 /* Content */
 .content {
   width: 800px;
-  height: 760px;
+  height: 1200px;
   margin: auto;
 }
 
@@ -383,7 +383,9 @@ svg {
 }
 
 /* Button */
-.content .gambar .deskripsi button {
+.content .gambar .deskripsi button,
+.btn button,
+.canva button {
   width: 100px;
   height: 32px;
   margin-top: 10px;
@@ -411,15 +413,50 @@ svg {
   -ms-transition: all 0.4s ease-in-out;
 }
 
-.content .gambar .deskripsi button a {
+.content .gambar .deskripsi button a,
+.canva button a,
+.btn button a {
   text-decoration: none;
   color: lightgray;
 }
 
 .content .gambar .deskripsi button:hover {
-  background-color: blue;
   width: 80px;
   height: 27px;
+  font-size: 13px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.gambar .btn button:hover {
+  width: 84px;
+  height: 29px;
+  font-size: 13px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  letter-spacing: 3px;
+}
+
+.linkcanva button:hover {
+  width: 85px;
+  height: 30px;
   font-size: 13px;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -438,17 +475,20 @@ svg {
 .sertifikat {
   width: 800px;
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   text-align: center;
   justify-content: space-between;
 }
 
-.sertifikat .gambar img {
+.sertifikat .gambar img,
+.canva img {
   width: 363px;
   height: 180px;
 }
 
-.sertifikat .gambar p {
+.sertifikat .gambar p,
+.canva .linkcanva p {
   font-size: 16px;
   font-weight: 600;
   font-family: "Ubuntu", sans-serif;
@@ -459,6 +499,15 @@ svg {
 .sertifikat .gambar {
   background-color: #fbfdffa9;
   box-shadow: 2px 2px 15px rgb(2, 21, 102);
+  border: 5px solid rgb(195, 216, 228);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sertifikat .canva {
+  background-color: #fbfdffa9;
+  box-shadow: 2px 2px 15px rgb(2, 21, 102);
+  margin-top: 50px;
   border: 5px solid rgb(195, 216, 228);
   border-radius: 5px;
   overflow: hidden;
