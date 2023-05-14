@@ -277,7 +277,7 @@ svg {
   display: flex;
   justify-content: space-between;
   border: 5px solid rgb(243, 239, 239);
-  box-shadow: -0px -0px 16px black;
+  box-shadow: -0px -0px 13px rgba(0, 0, 0, 0.7);
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -290,10 +290,10 @@ svg {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 35px;
-  color: #ffff;
+  color: #3a3939;
   letter-spacing: 3px;
   padding-top: 100px;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
 .about img {
@@ -325,12 +325,6 @@ svg {
   margin: auto;
 }
 
-.background {
-  background-image: url(../background/content.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .box {
   display: flex;
   justify-content: space-between;
@@ -349,19 +343,19 @@ svg {
   font-weight: bold;
   font-size: 35px;
   letter-spacing: 3px;
-  color: #ffff;
+  color: #3a3939;
   margin: 0 0 80px 0;
   padding-top: 100px;
   box-sizing: border-box;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
 .content .box .gambar {
   height: 260px;
   width: 200px;
   background-color: #fbfdffa9;
-  border: 5px solid rgb(195, 216, 228);
-  box-shadow: 2px 2px 15px rgb(2, 21, 102);
+  border: 3px solid rgb(241, 241, 241);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
   overflow: hidden;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -498,17 +492,17 @@ svg {
 
 .sertifikat .gambar {
   background-color: #fbfdffa9;
-  box-shadow: 2px 2px 15px rgb(2, 21, 102);
-  border: 5px solid rgb(195, 216, 228);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  border: 3px solid rgb(241, 241, 241);
   border-radius: 5px;
   overflow: hidden;
 }
 
 .sertifikat .canva {
   background-color: #fbfdffa9;
-  box-shadow: 2px 2px 15px rgb(2, 21, 102);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
   margin-top: 50px;
-  border: 5px solid rgb(195, 216, 228);
+  border: 3px solid rgb(241, 241, 241);
   border-radius: 5px;
   overflow: hidden;
 }
